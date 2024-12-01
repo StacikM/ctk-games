@@ -12,18 +12,23 @@
         <p>Home of exciting mobile games. Check out our latest game below!</p>
     </header>
     <main>
-        <section id="game">
+        <section id="game" onclick="window.location='https://games.ctksystem.com/jumpingchicken';">
             <h2>Jumping Chicken</h2>
             <img src="jumping-chicken-logo.png" alt="Jumping Chicken Logo">
             <p>Jump into action with Jumping Chicken, a fun, fast-paced game for Android and iOS!</p>
             <div class="links">
-                <a class="android" href="https://play.google.com/store/apps/details?id=com.ctkgames.jumpingchicken" target="_blank">Download on Android</a>
-                <a class="ios" href="https://apps.apple.com/us/app/jumpin-chicken/id6705129334" target="_blank">Download on iOS (Not out yet)</a>
+                <a class="android" href="https://play.google.com/store/apps/details?id=com.ctkgames.jumpingchicken" target="_blank" onclick="event.stopPropagation();">Download on Android</a>
+                <a class="ios" href="https://apps.apple.com/us/app/jumpin-chicken/id6705129334" target="_blank" onclick="event.stopPropagation();">Download on iOS (Not out yet)</a>
             </div>
         </section>
     </main>
     <footer>
         <p>© 2024 CTK Games. All rights reserved.</p>
+        <div id="socials">
+            <a href="https://www.instagram.com/ctk_systems/" target="_blank">Instagram</a> |
+            <a href="https://www.youtube.com/@ctksystem" target="_blank">YouTube</a> |
+            <a href="https://discord.gg/yWYXSRXFwR" target="_blank">Discord</a>
+        </div>
     </footer>
 </body>
 </html>
