@@ -1,34 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CTK Games</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CTK Games</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #000000, #6a0dad);
+      color: white;
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    #game {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 700px;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #game:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    #game img {
+      max-width: 120px;
+      margin: 20px 0;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 18px;
+      background-color: #6a0dad;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      transition: background 0.3s ease;
+    }
+
+    .links a:hover {
+      background-color: #8f3eea;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    #socials a {
+      color: #ccc;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+
+    #socials a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to CTK Games</h1>
-        <p>Home of exciting mobile games. Check out our latest game below!</p>
-    </header>
-    <main>
-        <section id="game" onclick="window.location='https://games.ctksystem.com/jumpingchicken';">
-            <h2>Jumping Chicken</h2>
-            <img src="jumping-chicken-logo.png" alt="Jumping Chicken Logo">
-            <p>Jump into action with Jumping Chicken, a fun, fast-paced game for Android and iOS!</p>
-            <div class="links">
-                <a class="android" href="https://play.google.com/store/apps/details?id=com.ctkgames.jumpingchicken" target="_blank" onclick="event.stopPropagation();">Download on Android</a>
-                <a class="ios" href="https://apps.apple.com/us/app/jumpin-chicken/id6705129334" target="_blank" onclick="event.stopPropagation();">Download on iOS (Not out yet)</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 CTK Games. All rights reserved.</p>
-        <div id="socials">
-            <a href="https://www.instagram.com/ctk_systems/" target="_blank">Instagram</a> |
-            <a href="https://www.youtube.com/@ctksystem" target="_blank">YouTube</a> |
-            <a href="https://discord.gg/yWYXSRXFwR" target="_blank">Discord</a>
-        </div>
-    </footer>
+  <header>
+    <h1>Welcome to CTK Games</h1>
+    <p>Home of exciting mobile games. Check out our latest game below!</p>
+  </header>
+
+  <main>
+    <section id="game" onclick="window.location='https://games.ctksystem.com/jumpingchicken';">
+      <h2>Jumping Chicken</h2>
+      <img src="jumping-chicken-logo.png" alt="Jumping Chicken Logo">
+      <p>Jump into action with Jumping Chicken, a fun, fast-paced game for Android and iOS!</p>
+      <div class="links">
+        <a class="android" href="https://play.google.com/store/apps/details?id=com.ctkgames.jumpingchicken" target="_blank" onclick="event.stopPropagation();">Download on Android</a>
+        <a class="ios" href="https://apps.apple.com/us/app/jumpin-chicken/id6705129334" target="_blank" onclick="event.stopPropagation();">Download on iOS (Not out yet)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 CTK Games. All rights reserved.</p>
+    <div id="socials">
+      <a href="https://www.instagram.com/ctk_systems/" target="_blank">Instagram</a> |
+      <a href="https://www.youtube.com/@ctksystem" target="_blank">YouTube</a> |
+      <a href="https://discord.gg/yWYXSRXFwR" target="_blank">Discord</a>
+    </div>
+  </footer>
 </body>
 </html>
